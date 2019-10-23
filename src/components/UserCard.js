@@ -2,11 +2,15 @@ import React from 'react'
 
 function UserCard({user}){
   return (
-    <ul>
-      <li>{user.login}</li>
-      <li>{user.html_url}</li>
-      <li><img src={user.avatar_url} alt=""/></li>
-    </ul>
+    <article>
+      <img src={user.avatar_url} alt=""/>
+      <div>
+        <h2>{user.login}</h2>
+        <p>
+          <span><a href={user.html_url} target="_blank" rel="noopener noreferrer">Ver perfil</a></span>
+        </p>
+      </div>
+    </article>
   );
 }
 

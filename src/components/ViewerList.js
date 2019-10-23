@@ -4,9 +4,9 @@ import UserCard from "./UserCard";
 
 function ViewerList({users}){
   return (
-    <div>
+    <section>
       {users.map(user => <UserCard key={user.id} user={user}></UserCard>)}
-    </div>
+    </section>
   );
 }
 

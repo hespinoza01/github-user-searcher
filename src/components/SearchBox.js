@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
+import styles from './SearchBox.module.css';
 
-const SearchBox = ({onChange, onSubmit}) => {
+function SearchBox({onChange, onSubmit}) {
   return(
-    <form onSubmit={onSubmit}>
-      <input type="text" onChange={onChange}/>
-      <button>Buscar</button>
+    <form class={styles.searchbox} onSubmit={onSubmit}>
+      <input class={styles.searchbox__input} type="text" onChange={onChange}/>
+      <button class={styles.searchbox__submit}>Buscar</button>
     </form>
   );
-};
+}
 
 export default SearchBox;

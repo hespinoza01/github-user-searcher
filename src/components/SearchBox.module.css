@@ -1,0 +1,33 @@
+.searchbox{
+  margin-top: 1rem;
+}
+
+.searchbox__input{
+  color: #333;
+  background-color: rgba(255, 255, 255, .95);
+  border: none;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  margin-right: .5rem;
+  border-radius: 5px;
+  outline: none;
+}
+
+.searchbox__submit{
+  padding: .5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333333;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color .25s, trasform .3s;
+  transform: scale(1);
+}
+.searchbox__submit:hover{
+  background-color: #cdcdcd;
+}
+.searchbox__submit:active{
+  transform: scale(.95);
+}
