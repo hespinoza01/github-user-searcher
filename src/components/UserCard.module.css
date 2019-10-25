@@ -1,0 +1,40 @@
+.card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  width: 25%;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 0 15px 5px gainsboro;
+}
+
+.card__img{
+  width: 7rem;
+  border-radius: 100px;
+}
+
+.card__infoContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card__title{
+  min-width: 7rem;
+}
+
+.card__link{
+  padding: .5rem 1rem;
+  border-radius: 7px;
+  border: 1px solid #333;
+  color: #333;
+  text-decoration: none;
+  transition: background-color .3s, color .3s;
+}
+.card__link:hover{
+  background-color: #333;
+  color: #fff;
+}
